@@ -1,3 +1,11 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+
 :root {
 	--dark: #374151;
 	--darker: #1F2937;
@@ -8,23 +16,16 @@
 	--light: #EEE;
 }
 
-* {
-	margin: 0;
-	box-sizing: border-box;
-	font-family: "Fira sans", sans-serif;
-}
-
 body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 	color: #FFF;
-	background-color: #b3b6a0;
-    /* background-image: linear-gradient(to right, #8b8f8a, #1d98cc ); */
+	background-color: #ccc;
 }
 
 header {
-	padding: 2rem 1rem;
+	padding: 2rem 2rem;
 	max-width: 800px;
 	width: 100%;
 	margin: 0 auto;
@@ -33,13 +34,9 @@ header {
 header h1{ 
 	font-size: 2.5rem;
 	font-weight: 550;
-	color:rgb(208, 24, 100);
-	margin-bottom: 0.6rem;
-    margin-top: 3rem;
-}
-
-header h1 span{
-    color: aqua;
+	color: teal;
+	margin-bottom: 1rem;
+    margin-top: 3.5rem;
 }
 
 #new-task-form {
@@ -71,9 +68,7 @@ input, button {
 	color: black;
 	font-size: 1.5rem;
 	font-weight: 700;
-	/* background-image: linear-gradient(to right, var(--pink), var(--purple)); */
 	-webkit-background-clip: text;
-	/* -webkit-text-fill-color: transparent; */
 	cursor: pointer;
 	transition: 0.4s;
 }
@@ -82,6 +77,9 @@ input, button {
 	opacity: 0.8;
 }
 
+h2{
+	font-size: 40px;
+}
 
 #new-task-submit:active {
 	opacity: 0.6;
@@ -101,7 +99,8 @@ main {
 .task-list h2 {
 	font-size: 1.5rem;
 	font-weight: 400;
-	color: var(--darker);
+	/* color: var(--darker); */
+	color: royalblue;
 	margin-bottom: 1rem;
 }
 
@@ -153,14 +152,14 @@ main {
 }
 
 .task .actions .edit {
-    background-color: blue;
+    background-color: lightcoral;
 	/* background-image: linear-gradient(to right, var(--pink), var(--purple)); */
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 .task .actions .delete {
-	color: crimson;
+	color: red;
 }
 
 
